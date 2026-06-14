@@ -78,3 +78,37 @@ button {
 button:hover{
     background-color: #0056b3;
 }
+
+.dark-mode-btn {
+    position: absolute; /* Takes the button out of the normal flow */
+    top: 20px;          /* Pins it 20px from the top */
+    right: 20px;        /* Pins it 20px from the right */
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #334155;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;   /* Makes the color change smooth */
+}
+
+body.dark-mode {
+    background-color: #121212; 
+    color: white; 
+}
+
+body.dark-mode .card {
+    background-color: #1e293b; /* A dark slate blue for the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* A darker, heavier shadow */
+    color: white;
+}
+
+body.dark-mode #weatherInfo {
+    background-color: #334155; /* Darker background for the inner box */
+    border-color: #475569;
+}
+
+body.dark-mode .weather-item {
+    color: #f8fafc; /* Changes the dark text inside the box to light text */
+}

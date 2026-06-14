@@ -6,6 +6,24 @@ const humidityDisplay = document.getElementById("humidity");
 const windDisplay = document.getElementById("wind");
 const conditionDisplay = document.getElementById("condition");
 
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// 2. Listen for a click
+darkModeToggle.addEventListener('click', () => {
+    // 3. The Magic: Add or remove the 'dark-mode' class from the body
+    document.body.classList.toggle('dark-mode');
+    
+    // 4. Change the button text depending on which mode is active
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeToggle.innerText = '☀️ Light Mode';
+        darkModeToggle.style.backgroundColor = '#f8fafc'; // Light button
+        darkModeToggle.style.color = '#334155';           // Dark text
+    } else {
+        darkModeToggle.innerText = '🌙 Dark Mode';
+        darkModeToggle.style.backgroundColor = '#334155'; // Dark button
+        darkModeToggle.style.color = 'white';             // Light text
+    }
+});
 cityInput.addEventListener("keypress", function(event){
     if(event.key === "Enter"){
         searchBtn.click();
