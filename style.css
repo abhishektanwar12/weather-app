@@ -1,8 +1,13 @@
 /* Apply the background color to the body, not everything */
 body {
-  background-color: rgb(196, 208, 219);
-  margin: 0; /* Removes default browser margins */
-  font-family: sans-serif; /* Makes the text look a bit cleaner */
+  /* Added url('') around your link! */
+  background-image: url('https://images.unsplash.com/photo-1633394964858-eb7b2367da9a?q=80&w=1190&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  
+  background-size: cover;       /* Forces the image to fill the whole screen */
+  background-position: center;  /* Centers the image so the best part is visible */
+  background-repeat: no-repeat;
+  margin: 0;                    /* Removes default browser margins */
+  font-family: sans-serif;      /* Makes the text look a bit cleaner */
 }
 
 .container {
