@@ -1,0 +1,75 @@
+/* Apply the background color to the body, not everything */
+body {
+  background-color: rgb(196, 208, 219);
+  margin: 0; /* Removes default browser margins */
+  font-family: sans-serif; /* Makes the text look a bit cleaner */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;  /* <-- THE MAGIC FIX: Stacks items vertically */
+  justify-content: center; /* Centers vertically (because of column direction) */
+  align-items: center;     /* Centers horizontally */
+  min-height: 100vh;       /* Makes the container take up the full screen height */
+  text-align: center;      
+  gap: 15px;               /* Adds a little space between your title, input, and button */
+}
+#weatherInfo {
+  background-color: #adb0b4; /* A very light, clean grey/blue background */
+  border: 1px solid #e2e8f0;   /* A soft border around the box */
+  border-radius: 10px;        /* Matches the rounded corners of your card */
+  padding: 15px;              /* Gives the text breathing room inside the box */
+  width: 100%;                /* Forces the box to stretch across the card width */
+  box-sizing: border-box;     /* Ensures padding doesn't accidentally make it overflow */
+  
+  /* Optional: Align the text left inside the box for a cleaner look */
+  text-align: left; 
+}
+
+/* Style the individual lines inside the box */
+.weather-item {
+  margin: 10px 0;             /* Puts a little space between each stat */
+  font-size: 16px;
+  color: #334155;             /* A soft charcoal color instead of harsh pure black */
+  display: flex;
+  justify-content: space-between; /* Pushes the title to the left and the data (--) to the right */
+}
+
+h1{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card{
+    background-color: rgb(231, 231, 231);
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+input {
+  
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+    background-color: #0056b3;
+}
