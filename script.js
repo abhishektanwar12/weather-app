@@ -67,3 +67,9 @@ searchBtn.addEventListener("click", async function(){
 
     conditionDisplay.innerText = `Condition: ${emoji} ${weather}`;
 });
+
+weatherInfo.classList.remove("show");
+
+setTimeout(() => {
+    weatherInfo.classList.add("show");
+}, 10);
